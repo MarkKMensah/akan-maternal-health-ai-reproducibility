@@ -96,8 +96,8 @@ All joint gates passed:
 
 ## Reproducibility identifiers
 
-- Joint evidence bundle: preserved in authenticated private research storage;
-  intentionally not linked from this public release.
+- Joint evidence bundle: preserved in controlled research storage and not
+  redistributed in this repository.
 - Joint decision SHA-256:
   `FA446575F4A1A2C7A58B9FE4691D580BE881B42D63F1E3CCC62CB9A60C333AC9`
 - Joint manifest SHA-256:

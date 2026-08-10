@@ -13,14 +13,12 @@
 
 ## RNMT notebook history
 
-The frozen pre-run notebook was preserved in Google Drive version history before execution:
+The frozen pre-run notebook was preserved in authenticated, versioned research storage before execution:
 
-- file ID: `1iMYoc4d_aAjvKrMJT34GfTgelxKwqJMo`
-- preserved revision ID: `0B_CEhARPKfZ9ZEtPZkZVWnBwbGVUYzNQbmlwN3R3K1JqOHM0PQ`
 - revision time: `2026-08-04T18:59:56Z`
 - recorded pre-run SHA-256: `50DEB0AF49EF34DA5DE33BB7364122F30BCC14865B91BA26731188A822FC3438`
 
-The notebook committed here is the later executed copy with outputs. Its hash therefore differs from the pre-run source. The frozen checksum record is retained in `rnmt_forward/protocols/NLLB_V3_V1_2_SHA256SUMS.txt`; both identities must be reported rather than assigning the pre-run digest to the executed file.
+The notebook committed here is the later executed copy with outputs and therefore has a different hash from the pre-run source. Colab account identifiers were removed from this public copy; cell sources, outputs, and execution counts were preserved. The frozen checksum record is retained in `rnmt_forward/protocols/NLLB_V3_V1_2_SHA256SUMS.txt`, preserving the identities of both artefacts.
 
 ## Data-dependent reproduction
 
@@ -32,7 +30,6 @@ The public repository excludes the data matrices, audio, and row-level human-aud
 4. model revisions and package versions match;
 5. the output manifest is regenerated and archived.
 
-## Claim discipline
+## Interpretation boundary
 
-All headline results in this release are development-only. Statistical intervals and paired tests quantify uncertainty on the evaluated development units; they do not repair sampling limitations or establish clinical effectiveness. Any future sealed-test analysis must be separately frozen, timestamped, and reported without retroactively changing these protocols.
-
+All headline results in this repository are based on the development partition. Statistical intervals and paired tests quantify uncertainty for the evaluated units but do not remove sampling limitations or establish clinical effectiveness. A future sealed-test analysis would require a separately frozen and timestamped protocol.

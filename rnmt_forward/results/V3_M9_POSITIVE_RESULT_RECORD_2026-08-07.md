@@ -82,9 +82,9 @@ unseen-speaker generalisation.
 - SBLLM run: no.
 - Production changed: no.
 
-The row-level evidence bundle is preserved in the authenticated private
-research archive. It is intentionally not linked from this public release;
-the public aggregate outputs and hashes are retained here.
+The row-level evidence bundle is preserved in controlled research storage
+and is not redistributed in this repository. Aggregate outputs and hashes
+are retained here.
 
 ## Claim boundary
 

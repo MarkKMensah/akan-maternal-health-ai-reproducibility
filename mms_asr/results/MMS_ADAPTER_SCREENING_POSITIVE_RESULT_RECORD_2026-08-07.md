@@ -47,9 +47,9 @@ failure at most 1%, and integrity pass.
   `C5E73B4A2E71340186C35A673A36E609B364933DEDC1A6EFDFEF2465F7DEBADB`
 - SHA-256 manifest SHA-256:
   `F9B6112E8BC7A1249AED72F1BC9AF668FD2A158E9CE4282CD3381F110A63CD06`
-- Private archive: the full run folder and paired predictions are preserved in
-  authenticated research storage and are intentionally not linked from this
-  public release. Aggregate results and immutable hashes are retained here.
+- Research archive: the full run folder and paired predictions are preserved in
+  controlled research storage and are not redistributed in this repository.
+  Aggregate results and immutable hashes are retained here.
 
 Execution amendment 01 changed only `low_cpu_mem_usage=True` to `False` after
 the first loader attempt failed on meta-device tensors before epoch 1.  No

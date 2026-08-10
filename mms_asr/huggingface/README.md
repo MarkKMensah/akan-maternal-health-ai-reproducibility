@@ -14,7 +14,7 @@ tags:
 - development-only
 ---
 
-# Akan maternal-health MMS-1B adapter — development v1
+# Akan Maternal-Health MMS-1B ASR Adapter
 
 This repository contains the selected epoch-4 adapter and processor for maternal-health Twi automatic speech recognition. It adapts the pinned base model `facebook/mms-1b-all@3d33597edbdaaba14a8e858e2c8caa76e3cec0cd`.
 
@@ -74,7 +74,9 @@ The frozen unadapted MMS baseline was WER `0.5068335`, CER `0.1457793` on 1,558 
 
 Mean relative improvement was 41.61% for WER and 47.05% for CER. A hierarchical bootstrap across seeds and 458 semantic groups gave 95% intervals of `[-0.222459, -0.200865]` for the WER delta and `[-0.071939, -0.065255]` for the CER delta. All four speaker codes improved in every confirmation seed.
 
-These are development results. They are not a sealed-test or unseen-speaker claim.
+### Evidence scope
+
+The reported metrics are based on the development partition. The evaluation does not measure sealed-test or unseen-speaker performance.
 
 ## Files and integrity
 
@@ -82,7 +84,7 @@ These are development results. They are not a sealed-test or unseen-speaker clai
 - `processor/` — processor/tokenizer files required by the adapter;
 - `adapter_metadata.json` — frozen provenance, split, training, and result metadata.
 
-The full public-safe protocols, scripts, aggregate results, and hashes are archived at:
+The complete protocols, scripts, aggregate results, and hashes are available at:
 
 `https://github.com/MarkKMensah/akan-maternal-health-ai-reproducibility`
 
@@ -92,7 +94,7 @@ Research on controlled Twi maternal-health speech and investigation of error pro
 
 ## Limitations and out-of-scope uses
 
-This model has not established performance for unseen speakers, broad Akan dialects, spontaneous patient speech, noisy clinical environments, population-level diversity, or clinical safety. It must not be used as a diagnostic or treatment system. The four-speaker, scripted development evidence and single-project domain are material limitations.
+Evaluation is limited to scripted recordings from four expert speakers and does not establish performance for unseen speakers, broad Akan dialects, spontaneous patient speech, noisy clinical environments, population-level diversity, or clinical safety. The adapter is intended for research and must not be used as a diagnostic or treatment system.
 
 ## Licence
 

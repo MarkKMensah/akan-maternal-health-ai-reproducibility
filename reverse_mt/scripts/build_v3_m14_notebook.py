@@ -57,7 +57,7 @@ gpu_text = subprocess.run(['nvidia-smi', '-L'], check=True, capture_output=True,
 print(gpu_text)
 assert 'A100' in gpu_text, 'Stop: choose an A100 GPU runtime before running V3-M14.'
 
-# Reuse the user's private Hugging Face secret when present and persist model downloads in Drive.
+# Use a Hugging Face token from Colab Secrets when present and persist model downloads in Drive.
 try:
     hf_token = userdata.get('HF_TOKEN')
 except Exception:
