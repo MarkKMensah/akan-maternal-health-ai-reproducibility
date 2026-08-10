@@ -16,7 +16,7 @@ The repository contains protocols, code, model/data revision identifiers, aggreg
 | Forward RNMT | `facebook/nllb-200-distilled-600M@f8d333a098d19b4fd9a8b18f94170487ad3f821d` | LoRA training | Separate Hugging Face adapter + this repository |
 | Reverse MT | `facebook/nllb-200-3.3B@a2814a8c92847d0d6aaf7afc9eac24ab57f26151` | **None**; zero-shot benchmark only | This repository; no derived model repository |
 
-Creating a new model repository for NLLB-3.3B would incorrectly imply that its parameters were changed. Its pinned upstream revision, decoding protocol, and benchmark evidence therefore live here instead.
+NLLB-3.3B was evaluated without parameter updates. Accordingly, this repository records the pinned upstream revision, decoding configuration, and benchmark results; no separate derived-model repository is provided.
 
 Model records:
 
