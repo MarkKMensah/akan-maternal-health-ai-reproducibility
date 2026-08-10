@@ -5,8 +5,6 @@ license: cc-by-nc-4.0
 library_name: transformers
 pipeline_tag: automatic-speech-recognition
 base_model: facebook/mms-1b-all
-datasets:
-- doi:10.57760/sciencedb.32698
 tags:
 - akan
 - twi
@@ -14,21 +12,6 @@ tags:
 - asr
 - adapter
 - development-only
-model-index:
-- name: Akan maternal-health MMS-1B adapter (development v1)
-  results:
-  - task:
-      type: automatic-speech-recognition
-    dataset:
-      name: Parallel English-Akan Maternal Health Dataset — development split
-      type: doi:10.57760/sciencedb.32698
-    metrics:
-    - name: WER
-      type: wer
-      value: 0.3011732401
-    - name: CER
-      type: cer
-      value: 0.0774433283
 ---
 
 # Akan maternal-health MMS-1B adapter — development v1
@@ -114,4 +97,3 @@ This model has not established performance for unseen speakers, broad Akan diale
 ## Licence
 
 The upstream MMS model is licensed CC BY-NC 4.0; this derived adapter is released under the same upstream licence conditions. Dataset reuse remains subject to the dataset's own CC BY 4.0 terms and ethics documentation.
-

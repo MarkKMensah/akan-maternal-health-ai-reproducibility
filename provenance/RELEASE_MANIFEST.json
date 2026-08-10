@@ -5,13 +5,16 @@
   "hugging_face": {
     "mms_asr": {
       "repository": "hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1",
-      "action": "update_existing_model_card_and_metadata",
+      "action": "updated_existing_model_card_and_metadata",
+      "commit": "ea2f0c1",
       "weights_already_present": true,
       "adapter_sha256": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B"
     },
     "forward_rnmt": {
-      "suggested_repository": "GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1",
-      "action": "create_model_repository_and_upload_lora_adapter",
+      "repository": "GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1",
+      "action": "created_model_repository_and_uploaded_lora_adapter",
+      "visibility": "private_initial_release_pending_explicit_public_weight_decision",
+      "commit": "0b911d9",
       "adapter_sha256": "209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1"
     },
     "reverse_mt": {
@@ -31,4 +34,3 @@
   ],
   "claim_boundary": "Development-only research evidence; no sealed-test, clinical-effectiveness, unseen-speaker, population-generalisation, or production-safety claim."
 }
-

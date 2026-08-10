@@ -18,6 +18,11 @@ The repository contains protocols, code, model/data revision identifiers, aggreg
 
 Creating a new model repository for NLLB-3.3B would incorrectly imply that its parameters were changed. Its pinned upstream revision, decoding protocol, and benchmark evidence therefore live here instead.
 
+Model records:
+
+- MMS ASR adapter: [`hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1`](https://huggingface.co/hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1)
+- forward-RNMT LoRA: [`GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1`](https://huggingface.co/GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1) (initially private pending an explicit public-weight release decision)
+
 ## Dataset and split boundary
 
 The source corpus is the *Parallel English–Akan Maternal Health Dataset* described by Wiafe et al. (2026):
@@ -81,4 +86,3 @@ This is a research artefact. It is not a medical device, diagnostic system, or s
 ## Citation
 
 Please cite both this software record (see `CITATION.cff`) and the source dataset article. Model-specific cards contain the relevant upstream model citations and licences.
-

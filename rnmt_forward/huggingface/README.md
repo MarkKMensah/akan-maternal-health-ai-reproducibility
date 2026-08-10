@@ -6,8 +6,6 @@ license: cc-by-nc-4.0
 library_name: peft
 pipeline_tag: translation
 base_model: facebook/nllb-200-distilled-600M
-datasets:
-- doi:10.57760/sciencedb.32698
 tags:
 - akan
 - twi
@@ -90,4 +88,3 @@ The data are scripted and limited to four expert speakers. The adapter was selec
 ## Licence
 
 The upstream NLLB model is licensed CC BY-NC 4.0; this LoRA adapter is released under the same upstream licence conditions. Dataset reuse remains subject to the dataset's CC BY 4.0 terms and ethics documentation.
-
