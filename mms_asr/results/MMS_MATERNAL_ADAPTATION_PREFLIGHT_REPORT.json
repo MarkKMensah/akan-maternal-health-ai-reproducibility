@@ -1,0 +1,97 @@
+{
+  "artifact": "mms_maternal_adaptation_preflight_report_v1",
+  "base_model": {
+    "repo_id": "facebook/mms-1b-all",
+    "revision": "3d33597edbdaaba14a8e858e2c8caa76e3cec0cd",
+    "target_lang": "aka"
+  },
+  "boundaries": {
+    "model_fitted": false,
+    "production_changed": false,
+    "rnmt_human_outcomes_read": false,
+    "sbllm_run": false,
+    "sealed_test_opened": false,
+    "test_rows_read": 0
+  },
+  "development_source": {
+    "by_speaker_rows": {
+      "BT": 377,
+      "HA": 429,
+      "IM": 372,
+      "PT": 380
+    },
+    "columns": [
+      "record_uid",
+      "speaker_code",
+      "content_group_id",
+      "Theme",
+      "Transcription",
+      "audio_filename",
+      "audio_path_frozen",
+      "audio_path_runtime",
+      "audio_sha256",
+      "duration_seconds",
+      "legacy_diagnostic",
+      "split"
+    ],
+    "group_column": "content_group_id",
+    "path": "/content/drive/MyDrive/Akan_ASR_PhD_Experiments/02_Baseline_Benchmark/20260724T201826Z_full_dev_asr-baseline-dev-v1/config/evaluated_records_full_dev.csv",
+    "rows": 1558,
+    "semantic_groups": 458,
+    "sha256": "30C202E8490BE242A411B1547712527546D3355237072CB29C09CB301FACFA4F",
+    "speaker_column": "speaker_code",
+    "split_column": "split",
+    "split_values": [
+      "dev"
+    ]
+  },
+  "executed_at_utc": "2026-08-07T04:26:11.905114+00:00",
+  "leakage_checks": {
+    "train_development_semantic_group_overlap": [],
+    "train_development_semantic_group_overlap_count": 0
+  },
+  "preflight_pass": true,
+  "protocol": "mms-maternal-asr-adaptation-preflight-v1",
+  "training_manifest": {
+    "audio_files_missing": 0,
+    "audio_files_present": 7240,
+    "audio_hours": 12.59351034265558,
+    "by_speaker": [
+      {
+        "audio_hours": 3.5995978835978835,
+        "rows": 1741,
+        "semantic_groups": 529,
+        "speaker_code": "BT"
+      },
+      {
+        "audio_hours": 2.631376606198035,
+        "rows": 1935,
+        "semantic_groups": 647,
+        "speaker_code": "HA"
+      },
+      {
+        "audio_hours": 3.1681566515495083,
+        "rows": 1721,
+        "semantic_groups": 433,
+        "speaker_code": "IM"
+      },
+      {
+        "audio_hours": 3.194379201310154,
+        "rows": 1843,
+        "semantic_groups": 530,
+        "speaker_code": "PT"
+      }
+    ],
+    "path": "/content/drive/MyDrive/Akan_ASR_PhD_Experiments/03_Adaptation/mms_maternal_adaptation_2026-08-06/V3_M5_TRAIN_AUDIO_MANIFEST_v1.csv",
+    "rows": 7240,
+    "semantic_groups": 2139,
+    "sha256": "1EBC4FF1D7F668AD28BA7262DD4CB143264F39906CF98B3B11806A9BCCDB5633",
+    "speaker_codes": [
+      "BT",
+      "HA",
+      "IM",
+      "PT"
+    ],
+    "unique_records": 7240
+  }
+}

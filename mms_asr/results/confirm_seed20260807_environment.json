@@ -1,0 +1,21 @@
+{
+  "bf16_supported": true,
+  "cache_seconds": 0.21007442474365234,
+  "cuda": "12.4",
+  "dev_oov_characters": [],
+  "dev_oov_occurrences": 0,
+  "dev_oov_rate": 0.0,
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "numpy": "1.26.4",
+  "protocol": "mms-maternal-adapter-confirm-dev-v1",
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "run_id": "20260807_mms_maternal_adapter_confirm_seed20260807",
+  "scipy": "1.14.1",
+  "sealed_test_opened": false,
+  "soundfile": "0.12.1",
+  "test_rows_read": 0,
+  "torch": "2.6.0+cu124",
+  "total_parameters": 964701097,
+  "trainable_parameters": 2203689,
+  "transformers": "4.46.3"
+}

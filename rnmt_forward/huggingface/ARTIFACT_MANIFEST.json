@@ -1,0 +1,26 @@
+{
+  "bundle_id": "nllb-v3-m9-frozen-rnmt-forward-router-v1",
+  "status": "development_evidence_only_not_production_authorized",
+  "production_authorized": false,
+  "base_model": {
+    "repository": "facebook/nllb-200-distilled-600M",
+    "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d"
+  },
+  "adapter": {
+    "seed": 17,
+    "source_run_id": "20260804T191924Z_nllb_v3_lora_dev_v1",
+    "sha256": "209b17b08168db35e02bd9cf2a5be321a0175069de51c0d8050aa565353c88e1"
+  },
+  "runtime_candidate": "D1",
+  "accepted_input_distribution": "mms_v3m9_adapted_epoch4",
+  "evidence_protocols": [
+    "20260804T191924Z_nllb_v3_lora_dev_v1",
+    "nllb-v3-m9-adapted-asr-causal-propagation-dev-v1",
+    "RNMT-SBLLM-V3-M10-END-TO-END-CAUSAL-2026-08-07"
+  ],
+  "retired_selector_executed": false,
+  "files_sha256": {
+    "adapter_seed_17/adapter_config.json": "d7b94b14048328297d33fe24862079c5c6ca7d89f1b7657c727bf2f3cfe32842",
+    "adapter_seed_17/adapter_model.safetensors": "209b17b08168db35e02bd9cf2a5be321a0175069de51c0d8050aa565353c88e1"
+  }
+}

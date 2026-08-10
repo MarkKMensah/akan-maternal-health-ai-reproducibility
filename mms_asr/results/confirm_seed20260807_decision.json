@@ -1,0 +1,204 @@
+{
+  "artifact": "mms_maternal_adapter_screen_decision_v1",
+  "automatic_pass": true,
+  "by_speaker": {
+    "BT": {
+      "adapted_cer": 0.07291594363850906,
+      "adapted_wer": 0.2721767011043819,
+      "baseline_cer": 0.1388214062608454,
+      "baseline_wer": 0.47167794798717494,
+      "cer_delta": -0.06590546262233635,
+      "rows": 377,
+      "wer_delta": -0.19950124688279303
+    },
+    "HA": {
+      "adapted_cer": 0.09336438669608564,
+      "adapted_wer": 0.3128264654672084,
+      "baseline_cer": 0.1505679496608646,
+      "baseline_wer": 0.4831688914683691,
+      "cer_delta": -0.05720356296477895,
+      "rows": 429,
+      "wer_delta": -0.17034242600116073
+    },
+    "IM": {
+      "adapted_cer": 0.07648585603048921,
+      "adapted_wer": 0.28636030310437544,
+      "baseline_cer": 0.13526300226697768,
+      "baseline_wer": 0.48288926912735275,
+      "cer_delta": -0.05877714623648847,
+      "rows": 372,
+      "wer_delta": -0.1965289660229773
+    },
+    "PT": {
+      "adapted_cer": 0.08020727365208545,
+      "adapted_wer": 0.3410499240032737,
+      "baseline_cer": 0.15860249237029503,
+      "baseline_wer": 0.5834210218636736,
+      "cer_delta": -0.07839521871820958,
+      "rows": 380,
+      "wer_delta": -0.2423710978603999
+    }
+  },
+  "clustered_bootstrap": {
+    "cer_delta_ci95": [
+      -0.06871760305416803,
+      -0.06234572529512761
+    ],
+    "clusters": 458,
+    "draws": 5000,
+    "wer_delta_ci95": [
+      -0.21318949663062015,
+      -0.19442254686447658
+    ]
+  },
+  "completed_at_utc": "2026-08-07T07:36:37.737907+00:00",
+  "dev_oov_characters": [],
+  "dev_oov_occurrences": 0,
+  "dev_oov_rate": 0.0,
+  "epoch_records": [
+    {
+      "adapted": {
+        "cer": 0.10778687457132687,
+        "char_errors": 12415,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.40517348976535195,
+        "word_errors": 12985
+      },
+      "baseline": {
+        "cer": 0.14577925178631893,
+        "char_errors": 16791,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.5068334997503744,
+        "word_errors": 16243
+      },
+      "epoch": 1,
+      "learning_rate_end": 0.0008335373317013464,
+      "output_failure_rate": 0.0,
+      "output_failures": 0,
+      "train_loss": 1.871759790379698
+    },
+    {
+      "adapted": {
+        "cer": 0.0907788610968823,
+        "char_errors": 10456,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.34233025461807287,
+        "word_errors": 10971
+      },
+      "baseline": {
+        "cer": 0.14577925178631893,
+        "char_errors": 16791,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.5068334997503744,
+        "word_errors": 16243
+      },
+      "epoch": 2,
+      "learning_rate_end": 0.0005556915544675643,
+      "output_failure_rate": 0.0,
+      "output_failures": 0,
+      "train_loss": 0.445603986273813
+    },
+    {
+      "adapted": {
+        "cer": 0.08347730962571952,
+        "char_errors": 9615,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.31730529206190716,
+        "word_errors": 10169
+      },
+      "baseline": {
+        "cer": 0.14577925178631893,
+        "char_errors": 16791,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.5068334997503744,
+        "word_errors": 16243
+      },
+      "epoch": 3,
+      "learning_rate_end": 0.00027784577723378214,
+      "output_failure_rate": 0.0,
+      "output_failures": 0,
+      "train_loss": 0.3885033367747101
+    },
+    {
+      "adapted": {
+        "cer": 0.08019551835806253,
+        "char_errors": 9237,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.3029206190713929,
+        "word_errors": 9708
+      },
+      "baseline": {
+        "cer": 0.14577925178631893,
+        "char_errors": 16791,
+        "reference_chars": 115181,
+        "reference_words": 32048,
+        "wer": 0.5068334997503744,
+        "word_errors": 16243
+      },
+      "epoch": 4,
+      "learning_rate_end": 0.0,
+      "output_failure_rate": 0.0,
+      "output_failures": 0,
+      "train_loss": 0.36217872276490565
+    }
+  ],
+  "gate_checks": {
+    "cer_no_worse": true,
+    "integrity_pass": true,
+    "no_speaker_cer_regression_gt_0_02": true,
+    "no_speaker_wer_regression_gt_0_03": true,
+    "one_clustered_ci_upper_below_zero": true,
+    "output_failure_rate_at_most_1pct": true,
+    "wer_relative_improvement_at_least_5pct": true
+  },
+  "input_sha256": {
+    "baseline_predictions": "A109AE8B52D179629B32689A61EC7F154537F412E40F4D3A7006E40B6ECE95DC",
+    "development_source": "30C202E8490BE242A411B1547712527546D3355237072CB29C09CB301FACFA4F",
+    "train_manifest": "1EBC4FF1D7F668AD28BA7262DD4CB143264F39906CF98B3B11806A9BCCDB5633",
+    "vocab": "71FBFC7637D9EBD049D168BC7095B03C139E90A7420AF5DC9DAC0812E07F8B7A"
+  },
+  "output_sha256_before_decision": {
+    "paired_predictions": "CA42DD5AECFCDCE837ED15E70A6553AC402CDDBAFD486C66D2633B512C7E88D5",
+    "selected_adapter": "2C69EDCD094924EC687C9CA2A610F873A54FD54B985EA5816EA810747C131DA7"
+  },
+  "overall": {
+    "adapted": {
+      "cer": 0.08019551835806253,
+      "char_errors": 9237,
+      "reference_chars": 115181,
+      "reference_words": 32048,
+      "wer": 0.3029206190713929,
+      "word_errors": 9708
+    },
+    "baseline": {
+      "cer": 0.14577925178631893,
+      "char_errors": 16791,
+      "reference_chars": 115181,
+      "reference_words": 32048,
+      "wer": 0.5068334997503744,
+      "word_errors": 16243
+    },
+    "cer_delta": -0.0655837334282564,
+    "wer_delta": -0.2039128806789815
+  },
+  "peak_gpu_memory_bytes": 11809813504,
+  "production_changed": false,
+  "protocol": "mms-maternal-adapter-confirm-dev-v1",
+  "rnmt_human_outcomes_read": false,
+  "run_id": "20260807_mms_maternal_adapter_confirm_seed20260807",
+  "sbllm_run": false,
+  "sealed_test_opened": false,
+  "seed": 20260807,
+  "selected_adapter_path": "/content/drive/MyDrive/Akan_ASR_PhD_Experiments/03_Adaptation/mms_maternal_adaptation_2026-08-06/runs/20260807_mms_maternal_adapter_confirm_seed20260807/checkpoints/adapter_epoch_04.safetensors",
+  "selected_epoch": 4,
+  "test_rows_read": 0,
+  "trainable_parameters": 2203689,
+  "training_seconds": 1186.9233524799347
+}

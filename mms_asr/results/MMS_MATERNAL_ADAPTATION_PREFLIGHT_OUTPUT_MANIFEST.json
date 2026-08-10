@@ -1,0 +1,7 @@
+{
+  "artifact": "mms_maternal_adaptation_preflight_output_manifest_v1",
+  "report_file": "MMS_MATERNAL_ADAPTATION_PREFLIGHT_REPORT.json",
+  "report_sha256": "B6104AFCE148D786A79B26F5827F92C2C6389737E8988E62523165AF9E66DEC9",
+  "sealed_test_opened": false,
+  "test_rows_read": 0
+}

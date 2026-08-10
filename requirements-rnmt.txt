@@ -1,0 +1,10 @@
+torch
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.11.0
+datasets==4.3.0
+evaluate==0.4.6
+sacrebleu==2.5.1
+sentencepiece==0.2.1
+scikit-learn==1.7.2
+

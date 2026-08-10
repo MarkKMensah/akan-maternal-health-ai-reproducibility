@@ -1,0 +1,23 @@
+{
+  "adapted": {
+    "cer": 0.08019551835806253,
+    "char_errors": 9237,
+    "reference_chars": 115181,
+    "reference_words": 32048,
+    "wer": 0.3029206190713929,
+    "word_errors": 9708
+  },
+  "baseline": {
+    "cer": 0.14577925178631893,
+    "char_errors": 16791,
+    "reference_chars": 115181,
+    "reference_words": 32048,
+    "wer": 0.5068334997503744,
+    "word_errors": 16243
+  },
+  "epoch": 4,
+  "learning_rate_end": 0.0,
+  "output_failure_rate": 0.0,
+  "output_failures": 0,
+  "train_loss": 0.36217872276490565
+}

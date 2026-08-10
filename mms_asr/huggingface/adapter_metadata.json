@@ -1,0 +1,63 @@
+{
+  "artifact": "akan_maternal_health_mms_1b_adapter_dev_v1",
+  "status": "development_evidence_only",
+  "base_model": {
+    "repository": "facebook/mms-1b-all",
+    "revision": "3d33597edbdaaba14a8e858e2c8caa76e3cec0cd",
+    "license": "cc-by-nc-4.0"
+  },
+  "dataset": {
+    "article_doi": "10.1016/j.dib.2026.113088",
+    "dataset_doi": "10.57760/sciencedb.32698",
+    "license": "cc-by-4.0",
+    "parent_unique_english_phrases": 3487,
+    "parent_akan_texts": 12000,
+    "parent_audio_files": 12000,
+    "parent_audio_hours": 32.313,
+    "speech_style": "controlled_scripted_studio_question_answer"
+  },
+  "split": {
+    "seed": 452,
+    "policy": "semantic_content_group_disjoint_speaker_stratified",
+    "speaker_disjoint": false,
+    "speaker_codes": ["BT", "HA", "IM", "PT"],
+    "train_rows": 7240,
+    "train_semantic_groups": 2139,
+    "train_audio_hours": 12.5935,
+    "development_rows": 1558,
+    "development_semantic_groups": 458,
+    "sealed_test_rows": 1552,
+    "sealed_test_opened_for_reported_results": false
+  },
+  "selected_checkpoint": {
+    "seed": 20260809,
+    "epoch": 4,
+    "adapter_sha256": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B"
+  },
+  "training": {
+    "epochs": 4,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "warmup_fraction": 0.1,
+    "device_batch_size": 8,
+    "gradient_accumulation": 4,
+    "effective_batch_size": 32,
+    "maximum_gradient_norm": 1.0,
+    "selection_rule": "lowest_development_wer_then_cer"
+  },
+  "development_results": {
+    "baseline_wer": 0.5068334997503744,
+    "baseline_cer": 0.14577925178631893,
+    "confirmation_seeds": [20260807, 20260808, 20260809],
+    "adapted_wer": [0.3029206190713929, 0.2837930604093859, 0.3011732401397903],
+    "adapted_cer": [0.08019551835806253, 0.07391844140960749, 0.07744332832672056],
+    "mean_adapted_wer": 0.2959623065401897,
+    "mean_adapted_cer": 0.0771857626981302,
+    "mean_relative_wer_improvement": 0.41605614726343654,
+    "mean_relative_cer_improvement": 0.4705298473388521,
+    "hierarchical_bootstrap_wer_delta_ci95": [-0.22245935438010872, -0.20086493475999062],
+    "hierarchical_bootstrap_cer_delta_ci95": [-0.07193918531667287, -0.06525547455198817]
+  },
+  "claim_boundary": "Development-only; no sealed-test, unseen-speaker, spontaneous-speech, clinical-effectiveness, population-generalisation, or production-safety claim."
+}
+

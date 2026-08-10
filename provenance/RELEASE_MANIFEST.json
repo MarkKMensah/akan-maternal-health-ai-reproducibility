@@ -1,0 +1,34 @@
+{
+  "release": "public_reproducibility_record_v1",
+  "release_date": "2026-08-10",
+  "github_target": "MarkKMensah/akan-maternal-health-ai-reproducibility",
+  "hugging_face": {
+    "mms_asr": {
+      "repository": "hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1",
+      "action": "update_existing_model_card_and_metadata",
+      "weights_already_present": true,
+      "adapter_sha256": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B"
+    },
+    "forward_rnmt": {
+      "suggested_repository": "GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1",
+      "action": "create_model_repository_and_upload_lora_adapter",
+      "adapter_sha256": "209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1"
+    },
+    "reverse_mt": {
+      "upstream_repository": "facebook/nllb-200-3.3B",
+      "upstream_revision": "a2814a8c92847d0d6aaf7afc9eac24ab57f26151",
+      "derived_repository_created": false,
+      "reason": "zero-shot benchmark only; no parameter update"
+    }
+  },
+  "excluded_from_public_release": [
+    "raw audio",
+    "row-level transcripts and split tables",
+    "completed human-audit workbooks",
+    "blind-audit reveal keys",
+    "credentials and environment secrets",
+    "private deployment configuration"
+  ],
+  "claim_boundary": "Development-only research evidence; no sealed-test, clinical-effectiveness, unseen-speaker, population-generalisation, or production-safety claim."
+}
+

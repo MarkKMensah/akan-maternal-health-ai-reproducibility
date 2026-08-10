@@ -1,0 +1,11 @@
+torch
+transformers==4.57.1
+datasets==4.3.0
+evaluate==0.4.6
+accelerate==1.11.0
+safetensors
+librosa
+soundfile
+jiwer
+scikit-learn==1.7.2
+

@@ -1,0 +1,59 @@
+{
+  "artifact": "akan_maternal_health_nllb_600m_rnmt_lora_v1",
+  "status": "development_evidence_only",
+  "base_model": {
+    "repository": "facebook/nllb-200-distilled-600M",
+    "revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d",
+    "license": "cc-by-nc-4.0"
+  },
+  "dataset": {
+    "article_doi": "10.1016/j.dib.2026.113088",
+    "dataset_doi": "10.57760/sciencedb.32698",
+    "license": "cc-by-4.0"
+  },
+  "split": {
+    "seed": 452,
+    "policy": "semantic_content_group_disjoint_speaker_stratified",
+    "speaker_disjoint": false,
+    "train_rows": 7240,
+    "train_semantic_groups": 2139,
+    "development_rows": 1558,
+    "development_semantic_groups": 458,
+    "sealed_test_rows": 1552,
+    "sealed_test_opened_for_reported_results": false
+  },
+  "adapter": {
+    "source_run_id": "20260804T191924Z_nllb_v3_lora_dev_v1",
+    "selected_seed": 17,
+    "sha256": "209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1",
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "target_modules": ["q_proj", "v_proj"]
+  },
+  "training": {
+    "source_language": "twi_Latn",
+    "target_language": "eng_Latn",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0002,
+    "device_batch_size": 16,
+    "gradient_accumulation": 2,
+    "effective_batch_size": 32,
+    "maximum_epochs": 8,
+    "seeds": [17, 29, 47],
+    "sampling": "semantic_group_balanced_weighted_random_sampler"
+  },
+  "adapted_asr_causal_development_result": {
+    "rows": 1558,
+    "semantic_groups": 458,
+    "original_mms_chrf_pp": 25.484108182001226,
+    "adapted_mms_chrf_pp": 30.8636159303867,
+    "chrf_pp_delta": 5.379507748385475,
+    "original_mms_sacrebleu": 7.20293566051934,
+    "adapted_mms_sacrebleu": 10.980620864051414,
+    "semantic_group_clustered_mean_sentence_chrf_delta_ci95": [5.1963044381482915, 6.762500098727161],
+    "exact_sign_test_p": 3.3462989625133986e-48
+  },
+  "claim_boundary": "Development-only; no sealed-test, clinical-safety, spontaneous-speech, population-generalisation, or production-readiness claim."
+}
+

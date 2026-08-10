@@ -1,0 +1,309 @@
+{
+  "artifact": "mms_maternal_adapter_three_seed_confirmation_decision_v1",
+  "automatic_pass": true,
+  "completed_at_utc": "2026-08-07T08:19:35.413824+00:00",
+  "gate_checks": {
+    "all_output_failure_rates_at_most_1pct": true,
+    "all_seed_decisions_pass": true,
+    "hierarchical_ci_upper_below_zero": true,
+    "integrity_pass": true,
+    "mean_relative_wer_improvement_at_least_5pct": true,
+    "no_seed_speaker_regression_beyond_limits": true,
+    "wer_and_cer_improve_every_seed": true
+  },
+  "hierarchical_bootstrap": {
+    "cer_delta_ci95": [
+      -0.07193918531667287,
+      -0.06525547455198817
+    ],
+    "content_groups_per_seed": 458,
+    "draws": 5000,
+    "seed": 20261807,
+    "seed_count": 3,
+    "wer_delta_ci95": [
+      -0.22245935438010872,
+      -0.20086493475999062
+    ]
+  },
+  "input_sha256": {
+    "20260807": {
+      "decision": "5C0328B74ED0395E74463B6556741D81566A12B05AC25476468C0824FE671E07",
+      "manifest": "B202EC55C65D30DF04CDEE4F035EA0151CF474977FBB902D216B67C63084959E",
+      "paired_predictions": "CA42DD5AECFCDCE837ED15E70A6553AC402CDDBAFD486C66D2633B512C7E88D5",
+      "selected_adapter": "2C69EDCD094924EC687C9CA2A610F873A54FD54B985EA5816EA810747C131DA7"
+    },
+    "20260808": {
+      "decision": "D5DBE3529F908F68ACFC832CFF2A217BB3F3FB722482AAD5426A1D3A69AB3062",
+      "manifest": "3224C5931E3FEF090B6C74BBC3A1957E72BAC5770A32928DCF241ED515D6921C",
+      "paired_predictions": "559559CBBB0B418D880FC44D85CAB19B705B7D5D8A8AD4C60511083BEF26CA9E",
+      "selected_adapter": "5D8A7CEE21D660CBD34C5F3FC414EA375B662220BBA7C8177D3CD12D19B443AA"
+    },
+    "20260809": {
+      "decision": "3B8734CA8BC7792D905EAACC3CEC961548699C3AFB34915E6E14EFF71C7D84A4",
+      "manifest": "A80D6D0BD27AB90C87E68B6FC54797F815451CB5D2F4F91CC0D9BD46DF30C5B9",
+      "paired_predictions": "0D0120327BB58CE505C81C0F4563D929A8204E717E89C16F67AA4D61A0A71BD2",
+      "selected_adapter": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B"
+    }
+  },
+  "production_changed": false,
+  "protocol": "mms-maternal-adapter-confirm-dev-v1",
+  "rnmt_human_outcomes_read": false,
+  "sbllm_run": false,
+  "sealed_test_opened": false,
+  "seed_summaries": [
+    {
+      "adapted_cer": 0.08019551835806253,
+      "adapted_wer": 0.3029206190713929,
+      "automatic_pass": true,
+      "baseline_cer": 0.14577925178631893,
+      "baseline_wer": 0.5068334997503744,
+      "by_speaker": {
+        "BT": {
+          "adapted_cer": 0.07291594363850906,
+          "adapted_wer": 0.2721767011043819,
+          "baseline_cer": 0.1388214062608454,
+          "baseline_wer": 0.47167794798717494,
+          "cer_delta": -0.06590546262233635,
+          "rows": 377,
+          "wer_delta": -0.19950124688279303
+        },
+        "HA": {
+          "adapted_cer": 0.09336438669608564,
+          "adapted_wer": 0.3128264654672084,
+          "baseline_cer": 0.1505679496608646,
+          "baseline_wer": 0.4831688914683691,
+          "cer_delta": -0.05720356296477895,
+          "rows": 429,
+          "wer_delta": -0.17034242600116073
+        },
+        "IM": {
+          "adapted_cer": 0.07648585603048921,
+          "adapted_wer": 0.28636030310437544,
+          "baseline_cer": 0.13526300226697768,
+          "baseline_wer": 0.48288926912735275,
+          "cer_delta": -0.05877714623648847,
+          "rows": 372,
+          "wer_delta": -0.1965289660229773
+        },
+        "PT": {
+          "adapted_cer": 0.08020727365208545,
+          "adapted_wer": 0.3410499240032737,
+          "baseline_cer": 0.15860249237029503,
+          "baseline_wer": 0.5834210218636736,
+          "cer_delta": -0.07839521871820958,
+          "rows": 380,
+          "wer_delta": -0.2423710978603999
+        }
+      },
+      "cer_delta": -0.0655837334282564,
+      "clustered_bootstrap": {
+        "cer_delta_ci95": [
+          -0.06871760305416803,
+          -0.06234572529512761
+        ],
+        "clusters": 458,
+        "draws": 5000,
+        "wer_delta_ci95": [
+          -0.21318949663062015,
+          -0.19442254686447658
+        ]
+      },
+      "output_failure_rate": 0.0,
+      "peak_gpu_memory_bytes": 11809813504,
+      "relative_cer_improvement": 0.4498838663569769,
+      "relative_wer_improvement": 0.40232715631348887,
+      "seed": 20260807,
+      "selected_epoch": 4,
+      "training_seconds": 1186.9233524799347,
+      "wer_delta": -0.2039128806789815
+    },
+    {
+      "adapted_cer": 0.07391844140960749,
+      "adapted_wer": 0.2837930604093859,
+      "automatic_pass": true,
+      "baseline_cer": 0.14577925178631893,
+      "baseline_wer": 0.5068334997503744,
+      "by_speaker": {
+        "BT": {
+          "adapted_cer": 0.06774484625529256,
+          "adapted_wer": 0.25412658829117685,
+          "baseline_cer": 0.1388214062608454,
+          "baseline_wer": 0.47167794798717494,
+          "cer_delta": -0.07107656000555285,
+          "rows": 377,
+          "wer_delta": -0.2175513596959981
+        },
+        "HA": {
+          "adapted_cer": 0.08788918852659966,
+          "adapted_wer": 0.3004933255948926,
+          "baseline_cer": 0.1505679496608646,
+          "baseline_wer": 0.4831688914683691,
+          "cer_delta": -0.06267876113426493,
+          "rows": 429,
+          "wer_delta": -0.1826755658734765
+        },
+        "IM": {
+          "adapted_cer": 0.06889640897591746,
+          "adapted_wer": 0.265338548032266,
+          "baseline_cer": 0.13526300226697768,
+          "baseline_wer": 0.48288926912735275,
+          "cer_delta": -0.06636659329106022,
+          "rows": 372,
+          "wer_delta": -0.21755072109508677
+        },
+        "PT": {
+          "adapted_cer": 0.07356307222787385,
+          "adapted_wer": 0.31719864375073076,
+          "baseline_cer": 0.15860249237029503,
+          "baseline_wer": 0.5834210218636736,
+          "cer_delta": -0.08503942014242118,
+          "rows": 380,
+          "wer_delta": -0.26622237811294286
+        }
+      },
+      "cer_delta": -0.07186081037671144,
+      "clustered_bootstrap": {
+        "cer_delta_ci95": [
+          -0.07514440537551374,
+          -0.06857471033299346
+        ],
+        "clusters": 458,
+        "draws": 5000,
+        "wer_delta_ci95": [
+          -0.23217151193876548,
+          -0.21403090917130094
+        ]
+      },
+      "output_failure_rate": 0.0,
+      "peak_gpu_memory_bytes": 11809592320,
+      "relative_cer_improvement": 0.49294264784706093,
+      "relative_wer_improvement": 0.4400664901803854,
+      "seed": 20260808,
+      "selected_epoch": 4,
+      "training_seconds": 1183.2733013629913,
+      "wer_delta": -0.2230404393409885
+    },
+    {
+      "adapted_cer": 0.07744332832672056,
+      "adapted_wer": 0.3011732401397903,
+      "automatic_pass": true,
+      "baseline_cer": 0.14577925178631893,
+      "baseline_wer": 0.5068334997503744,
+      "by_speaker": {
+        "BT": {
+          "adapted_cer": 0.06934129242729228,
+          "adapted_wer": 0.2663579147369671,
+          "baseline_cer": 0.1388214062608454,
+          "baseline_wer": 0.47167794798717494,
+          "cer_delta": -0.06948011383355313,
+          "rows": 377,
+          "wer_delta": -0.2053200332502078
+        },
+        "HA": {
+          "adapted_cer": 0.09168913949497426,
+          "adapted_wer": 0.3179048171793384,
+          "baseline_cer": 0.1505679496608646,
+          "baseline_wer": 0.4831688914683691,
+          "cer_delta": -0.05887881016589033,
+          "rows": 429,
+          "wer_delta": -0.16526407428903073
+        },
+        "IM": {
+          "adapted_cer": 0.07425173308801787,
+          "adapted_wer": 0.2837936934734784,
+          "baseline_cer": 0.13526300226697768,
+          "baseline_wer": 0.48288926912735275,
+          "cer_delta": -0.06101126917895981,
+          "rows": 372,
+          "wer_delta": -0.19909557565387437
+        },
+        "PT": {
+          "adapted_cer": 0.07686927772126144,
+          "adapted_wer": 0.3385946451537472,
+          "baseline_cer": 0.15860249237029503,
+          "baseline_wer": 0.5834210218636736,
+          "cer_delta": -0.08173321464903359,
+          "rows": 380,
+          "wer_delta": -0.2448263767099264
+        }
+      },
+      "cer_delta": -0.06833592345959837,
+      "clustered_bootstrap": {
+        "cer_delta_ci95": [
+          -0.07155320631333563,
+          -0.06522358637116747
+        ],
+        "clusters": 458,
+        "draws": 5000,
+        "wer_delta_ci95": [
+          -0.2148598132581838,
+          -0.19647232044253693
+        ]
+      },
+      "output_failure_rate": 0.0,
+      "peak_gpu_memory_bytes": 11809592320,
+      "relative_cer_improvement": 0.46876302781251855,
+      "relative_wer_improvement": 0.40577479529643534,
+      "seed": 20260809,
+      "selected_epoch": 4,
+      "training_seconds": 1194.6076741218567,
+      "wer_delta": -0.2056602596105841
+    }
+  ],
+  "seeds": [
+    20260807,
+    20260808,
+    20260809
+  ],
+  "summary": {
+    "adapted_cer": {
+      "max": 0.08019551835806253,
+      "mean": 0.0771857626981302,
+      "min": 0.07391844140960749,
+      "sample_sd": 0.0031464549566106587
+    },
+    "adapted_wer": {
+      "max": 0.3029206190713929,
+      "mean": 0.2959623065401897,
+      "min": 0.2837930604093859,
+      "sample_sd": 0.010575029400749416
+    },
+    "cer_delta": {
+      "max": -0.0655837334282564,
+      "mean": -0.06859348908818873,
+      "min": -0.07186081037671144,
+      "sample_sd": 0.0031464549566106587
+    },
+    "peak_gpu_memory_bytes": {
+      "max": 11809813504,
+      "mean": 11809666048,
+      "min": 11809592320,
+      "sample_sd": 127700.64194043819
+    },
+    "relative_cer_improvement": {
+      "max": 0.49294264784706093,
+      "mean": 0.4705298473388521,
+      "min": 0.4498838663569769,
+      "sample_sd": 0.021583695334248854
+    },
+    "relative_wer_improvement": {
+      "max": 0.4400664901803854,
+      "mean": 0.41605614726343654,
+      "min": 0.40232715631348887,
+      "sample_sd": 0.020864898247566186
+    },
+    "training_seconds": {
+      "max": 1194.6076741218567,
+      "mean": 1188.2681093215942,
+      "min": 1183.2733013629913,
+      "sample_sd": 5.785609706990257
+    },
+    "wer_delta": {
+      "max": -0.2039128806789815,
+      "mean": -0.2108711932101847,
+      "min": -0.2230404393409885,
+      "sample_sd": 0.010575029400749416
+    }
+  },
+  "test_rows_read": 0
+}

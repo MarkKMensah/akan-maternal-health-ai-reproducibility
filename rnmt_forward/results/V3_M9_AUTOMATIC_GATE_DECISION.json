@@ -1,0 +1,173 @@
+{
+  "artifact": "v3_m9_automatic_gate_decision_v1",
+  "automatic_pass": true,
+  "automatic_proxy_warning": "Lexicon, number and negation checks are screening proxies, not clinical-safety judgments.",
+  "completed_utc": "2026-08-07T13:51:28.900533+00:00",
+  "decision": "PASS_TO_SEPARATELY_FROZEN_72_CASE_BLINDED_DEVELOPMENT_AUDIT",
+  "diagnostic_gold_gap": {
+    "d1_recovery_fraction_of_positive_gold_gap": 0.3771333118815404,
+    "g_minus_d0_corpus_chrf_pp": 14.26420732113743
+  },
+  "gate_checks": {
+    "clustered_chrf_lower_ci_above_zero": true,
+    "d1_chrf_gain_at_least_1_point": true,
+    "d1_zero_empty_outputs": true,
+    "integrity_1558_rows_458_groups": true,
+    "macro_token_f1_noninferior_within_0_005": true,
+    "negation_agreement_noninferior_within_0_01": true,
+    "no_speaker_chrf_loss_gt_1_point": true,
+    "number_agreement_noninferior_within_0_01": true,
+    "paired_exact_sign_test_below_0_05_and_wins_exceed_losses": true,
+    "protected_recall_noninferior_within_0_005": true,
+    "sacrebleu_noninferior_within_0_5": true,
+    "strict_stop_boundaries_preserved": true
+  },
+  "gate_thresholds": {
+    "bleu_noninferiority": -0.5,
+    "chrf_min_gain": 1.0,
+    "negation_agreement_noninferiority": -0.01,
+    "number_agreement_noninferiority": -0.01,
+    "protected_recall_noninferiority": -0.005,
+    "speaker_chrf_max_loss": -1.0,
+    "token_f1_noninferiority": -0.005
+  },
+  "generation_seconds": 53.026235818862915,
+  "human_outcomes_read": false,
+  "input_sha256": {
+    "adapted_asr_adapter": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B",
+    "adapted_asr_predictions": "0D0120327BB58CE505C81C0F4563D929A8204E717E89C16F67AA4D61A0A71BD2",
+    "clinical_lexicon": "A0532F1A5124DD48E90F9F4697CC8A9DDB7AC99048244C2C70DCB6A7727B23AA",
+    "development_source": "CB202D42D8A0D079F68515A4EFFD536BE2EE91CEA5E4689E2F55251A5C67626A",
+    "m1_adapter": "209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1",
+    "m1_predictions": "39DC9919C283FD59C1D4CDB3D878AA6D987C26D1AD993443FE246830F9C0E1C4",
+    "precommit": "BF21C6D715B054568483DEFDE9D5D17D135B261EAEF5723A33A4CEF502D69302",
+    "protocol": "830446ACC3C4CBA741B05E0F65565CA3DB8753DE9E5C0C1050B8EAB1B6A20D54"
+  },
+  "output_sha256": {
+    "paired_predictions": "4ED5189C8DA8B5F6A1904363CB486ABDC51C722618F8E8B63D8640A23DFB1C86"
+  },
+  "overall": {
+    "D0": {
+      "chrf_pp": 25.484108182001226,
+      "empty_outputs": 0,
+      "groups": 458,
+      "macro_token_f1": 0.26768829078890355,
+      "negation_agreement": 0.8401797175866496,
+      "number_agreement": 0.9358151476251605,
+      "protected_precision": 0.4380081300813008,
+      "protected_recall": 0.3798967236467236,
+      "rows": 1558,
+      "sacrebleu": 7.20293566051934
+    },
+    "D1": {
+      "chrf_pp": 30.8636159303867,
+      "empty_outputs": 0,
+      "groups": 458,
+      "macro_token_f1": 0.3358774620673223,
+      "negation_agreement": 0.8632862644415917,
+      "number_agreement": 0.9377406931964056,
+      "protected_precision": 0.4881792896876337,
+      "protected_recall": 0.45753205128205127,
+      "rows": 1558,
+      "sacrebleu": 10.980620864051414
+    },
+    "G": {
+      "chrf_pp": 39.748315503138656,
+      "empty_outputs": 0,
+      "groups": 458,
+      "macro_token_f1": 0.4468766677618001,
+      "negation_agreement": 0.9011553273427471,
+      "number_agreement": 0.9518613607188704,
+      "protected_precision": 0.6067608044501497,
+      "protected_recall": 0.5712250712250712,
+      "rows": 1558,
+      "sacrebleu": 20.175345976737837
+    }
+  },
+  "paired_d1_minus_d0": {
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20260807,
+    "corpus_chrf_pp_delta": 5.379507748385475,
+    "losses": 487,
+    "macro_token_f1_delta": 0.06818917127841873,
+    "mean_sentence_chrf_pp_delta": 6.1250368398755,
+    "negation_agreement_delta": 0.023106546854942178,
+    "number_agreement_delta": 0.0019255455712451353,
+    "protected_recall_delta": 0.07763532763532766,
+    "sacrebleu_delta": 3.777685203532074,
+    "semantic_group_clustered_ci95": [
+      5.1963044381482915,
+      6.762500098727161
+    ],
+    "ties": 17,
+    "two_sided_exact_sign_p": 3.3462989625133986e-48,
+    "wins": 1054
+  },
+  "production_changed": false,
+  "protocol_id": "nllb-v3-m9-adapted-asr-causal-propagation-dev-v1",
+  "sbllm_run": false,
+  "sealed_test_opened": false,
+  "speaker_metrics": [
+    {
+      "d0_chrf_pp": 26.268634288687707,
+      "d0_macro_token_f1": 0.2658030666952153,
+      "d0_sacrebleu": 6.923367175450768,
+      "d1_chrf_pp": 31.73658874050046,
+      "d1_macro_token_f1": 0.33262463238490525,
+      "d1_minus_d0_chrf_pp": 5.467954451812751,
+      "d1_sacrebleu": 10.138517183125327,
+      "g_chrf_pp": 40.29890597747679,
+      "g_macro_token_f1": 0.443834609221066,
+      "g_sacrebleu": 19.09276168330349,
+      "groups": 115,
+      "rows": 377,
+      "speaker_code": "BT"
+    },
+    {
+      "d0_chrf_pp": 23.196259719870284,
+      "d0_macro_token_f1": 0.2669337368850826,
+      "d0_sacrebleu": 6.546667460160743,
+      "d1_chrf_pp": 26.885954192456502,
+      "d1_macro_token_f1": 0.31341985151920904,
+      "d1_minus_d0_chrf_pp": 3.6896944725862184,
+      "d1_sacrebleu": 9.213226749176735,
+      "g_chrf_pp": 35.123375600169624,
+      "g_macro_token_f1": 0.4404645725198406,
+      "g_sacrebleu": 17.246008516504016,
+      "groups": 143,
+      "rows": 429,
+      "speaker_code": "HA"
+    },
+    {
+      "d0_chrf_pp": 31.123656281930888,
+      "d0_macro_token_f1": 0.3318807150430568,
+      "d0_sacrebleu": 10.86324458931634,
+      "d1_chrf_pp": 38.27650649183052,
+      "d1_macro_token_f1": 0.4184948440225662,
+      "d1_minus_d0_chrf_pp": 7.152850209899629,
+      "d1_sacrebleu": 17.075382679742823,
+      "g_chrf_pp": 49.2763308162191,
+      "g_macro_token_f1": 0.5418216170088423,
+      "g_sacrebleu": 29.531824953761916,
+      "groups": 94,
+      "rows": 372,
+      "speaker_code": "IM"
+    },
+    {
+      "d0_chrf_pp": 21.701767370579535,
+      "d0_macro_token_f1": 0.2075694783823629,
+      "d0_sacrebleu": 4.461689286854279,
+      "d1_chrf_pp": 27.04637428405538,
+      "d1_macro_token_f1": 0.28358000319379867,
+      "d1_minus_d0_chrf_pp": 5.344606913475843,
+      "d1_sacrebleu": 7.431551230596223,
+      "g_chrf_pp": 34.790814727945516,
+      "g_macro_token_f1": 0.3641875198901096,
+      "g_sacrebleu": 14.903924932076155,
+      "groups": 107,
+      "rows": 380,
+      "speaker_code": "PT"
+    }
+  ],
+  "test_rows_read": 0
+}
