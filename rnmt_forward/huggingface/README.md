@@ -16,7 +16,7 @@ tags:
 - development-only
 ---
 
-# Akan maternal-health NLLB-600M RNMT LoRA — seed 17
+# Akan–English Maternal-Health NLLB-600M RNMT LoRA
 
 This repository contains the selected LoRA adapter for Twi-to-English maternal-health translation. It adapts the pinned base model:
 
@@ -26,11 +26,9 @@ Adapter SHA-256:
 
 `209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1`
 
-## Why this is a separate model repository
+## Model architecture and research record
 
-The LoRA weights are a trained derivative and therefore belong on Hugging Face. The complete training notebook, frozen protocols, aggregate statistics, figures, and checksums belong in the companion GitHub repository. This separation keeps weights loadable while keeping the research history reviewable.
-
-No Hugging Face derivative is created for the later NLLB-3.3B reverse-translation experiment because that model was benchmarked zero-shot and its parameters were not changed.
+This repository provides the trained LoRA adapter in a directly loadable form. The companion GitHub repository contains the training notebook, frozen protocols, aggregate statistics, figures, and checksums.
 
 ## Source data and split
 
@@ -59,7 +57,7 @@ The split is semantic-content-group-disjoint and speaker-stratified, not speaker
 
 In the V3-M9 causal-propagation experiment, the same frozen RNMT adapter was fed two ASR conditions on 1,558 development rows:
 
-- D0: original public MMS transcription;
+- D0: unadapted MMS transcription;
 - D1: selected adapted-MMS transcription.
 
 | Metric | D0 | D1 | D1 − D0 |
@@ -71,7 +69,9 @@ In the V3-M9 causal-propagation experiment, the same frozen RNMT adapter was fed
 
 The semantic-group-clustered 95% interval for mean sentence chrF++ gain was `[5.1963, 6.7625]`; wins/losses/ties were 1,054/487/17; exact two-sided sign-test p = `3.35e-48`.
 
-This establishes a development-stage causal propagation result for the evaluated pipeline conditions. It is not a claim of clinical safety or sealed-test generalisation.
+### Evidence scope
+
+The comparison measures causal error propagation under the specified development-stage pipeline conditions. It does not assess clinical safety or sealed-test generalisation.
 
 ## Loading
 
@@ -83,7 +83,7 @@ Load the pinned NLLB base with Transformers, then attach this adapter with PEFT.
 
 ## Limitations
 
-The data are scripted and limited to four expert speakers. The adapter was selected on development data. The sealed test was not opened for the reported results. Automated lexical and protected-concept checks are screening proxies, not clinical-safety judgements. Single-expert human audits elsewhere in the project are not independent inter-rater validation.
+The data are scripted and limited to four expert speakers, and the adapter was selected on the development partition. The sealed test was not used for the reported results. Automated lexical and protected-concept measures are screening proxies rather than clinical-safety assessments. The associated human audits used single-expert adjudication and do not provide independent inter-rater validation.
 
 ## Licence
 

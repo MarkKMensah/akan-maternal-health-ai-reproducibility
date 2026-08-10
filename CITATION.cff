@@ -6,7 +6,6 @@ authors:
   - family-names: "Mensah"
     given-names: "Mark Atta"
 repository-code: "https://github.com/MarkKMensah/akan-maternal-health-ai-reproducibility"
-license: "LicenseRef-Proprietary"
 date-released: 2026-08-10
 keywords:
   - Akan
@@ -18,11 +17,7 @@ keywords:
 references:
   - type: article
     title: "A Parallel English-Akan Maternal Health Dataset to Support Machine Translation and Text-to-Speech Systems"
-    authors:
-      - family-names: "Wiafe"
-        given-names: "Isaac"
     doi: "10.1016/j.dib.2026.113088"
   - type: dataset
     title: "Parallel English-Akan Maternal Health Dataset"
     doi: "10.57760/sciencedb.32698"
-
