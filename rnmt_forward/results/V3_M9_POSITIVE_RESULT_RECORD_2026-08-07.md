@@ -82,8 +82,9 @@ unseen-speaker generalisation.
 - SBLLM run: no.
 - Production changed: no.
 
-The Drive evidence folder is:
-https://drive.google.com/drive/folders/1TbDtnMhsTZU_CiEfSKt_y2JlfL0Uvx0x
+The row-level evidence bundle is preserved in the authenticated private
+research archive. It is intentionally not linked from this public release;
+the public aggregate outputs and hashes are retained here.
 
 ## Claim boundary
 

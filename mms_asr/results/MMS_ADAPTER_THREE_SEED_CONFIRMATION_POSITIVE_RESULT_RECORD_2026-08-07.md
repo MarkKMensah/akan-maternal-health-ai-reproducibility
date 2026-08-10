@@ -96,8 +96,8 @@ All joint gates passed:
 
 ## Reproducibility identifiers
 
-- Joint Drive evidence:
-  https://drive.google.com/drive/folders/146hIQHxjwpPrbSrEoFM-CJXtl9VTgGrB
+- Joint evidence bundle: preserved in authenticated private research storage;
+  intentionally not linked from this public release.
 - Joint decision SHA-256:
   `FA446575F4A1A2C7A58B9FE4691D580BE881B42D63F1E3CCC62CB9A60C333AC9`
 - Joint manifest SHA-256:
@@ -131,4 +131,3 @@ release protocol. Test data must not be opened until the test container,
 selected checkpoint rule, baseline, normalization, metrics, subgroup analyses,
 confidence intervals, failure criteria and no-tuning rule are all fully
 identified and hash-locked.
-
