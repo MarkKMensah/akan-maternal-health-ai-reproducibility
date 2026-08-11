@@ -1,0 +1,185 @@
+{
+  "arm_summary": [
+    {
+      "arm": "T0",
+      "mean_clipping_fraction": 0.0,
+      "mean_silence_fraction": 0.10075825304885815,
+      "median_duration_seconds": 6.49687074829932,
+      "median_latency_seconds": 1.353479137000022,
+      "median_real_time_factor": 0.20429587787936784,
+      "rows": 48,
+      "success_rate": 1.0
+    },
+    {
+      "arm": "T1",
+      "mean_clipping_fraction": 0.0,
+      "mean_silence_fraction": 0.1593708055391249,
+      "median_duration_seconds": 7.952,
+      "median_latency_seconds": 0.10382767250007416,
+      "median_real_time_factor": 0.012785217238595,
+      "rows": 48,
+      "success_rate": 1.0
+    },
+    {
+      "arm": "T2",
+      "mean_clipping_fraction": 0.0,
+      "mean_silence_fraction": 0.231521000988831,
+      "median_duration_seconds": 6.68,
+      "median_latency_seconds": 0.0966274740000017,
+      "median_real_time_factor": 0.013165160054138,
+      "rows": 48,
+      "success_rate": 1.0
+    },
+    {
+      "arm": "T3",
+      "mean_clipping_fraction": 0.0,
+      "mean_silence_fraction": 0.27864032532151173,
+      "median_duration_seconds": 7.360725623582766,
+      "median_latency_seconds": 1.2763831754998591,
+      "median_real_time_factor": 0.17330477499700064,
+      "rows": 48,
+      "success_rate": 1.0
+    },
+    {
+      "arm": "T4",
+      "mean_clipping_fraction": 8.402522923347026e-06,
+      "mean_silence_fraction": 0.12497946193994726,
+      "median_duration_seconds": 6.339047619047619,
+      "median_latency_seconds": 0.2970466049998777,
+      "median_real_time_factor": 0.05097135306223665,
+      "rows": 48,
+      "success_rate": 1.0
+    }
+  ],
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260810,
+  "claim_boundary": "Development component selection only; ASR round-trip scores are proxies and Stage B is a blinded single-expert screen, not MOS or clinical validation.",
+  "completed_utc": "2026-08-11T02:14:33.982264+00:00",
+  "corpus_proxy_summary": [
+    {
+      "arm": "T0",
+      "empty_outputs": 0,
+      "evaluator": "adapted_mms",
+      "mean_row_cer": 0.3394907535520962,
+      "mean_row_wer": 0.7912990916917056,
+      "rows": 48
+    },
+    {
+      "arm": "T1",
+      "empty_outputs": 0,
+      "evaluator": "adapted_mms",
+      "mean_row_cer": 0.0845062655840078,
+      "mean_row_wer": 0.30632005129697165,
+      "rows": 48
+    },
+    {
+      "arm": "T2",
+      "empty_outputs": 0,
+      "evaluator": "adapted_mms",
+      "mean_row_cer": 0.15262966597479796,
+      "mean_row_wer": 0.4752129039317808,
+      "rows": 48
+    },
+    {
+      "arm": "T3",
+      "empty_outputs": 0,
+      "evaluator": "adapted_mms",
+      "mean_row_cer": 0.06519366806759452,
+      "mean_row_wer": 0.3031022894690372,
+      "rows": 48
+    },
+    {
+      "arm": "T4",
+      "empty_outputs": 0,
+      "evaluator": "adapted_mms",
+      "mean_row_cer": 0.31651947497341,
+      "mean_row_wer": 0.7984043964838307,
+      "rows": 48
+    },
+    {
+      "arm": "T0",
+      "empty_outputs": 0,
+      "evaluator": "farmerline_w2v_bert",
+      "mean_row_cer": 0.3683389413257366,
+      "mean_row_wer": 0.8279315535392078,
+      "rows": 48
+    },
+    {
+      "arm": "T1",
+      "empty_outputs": 0,
+      "evaluator": "farmerline_w2v_bert",
+      "mean_row_cer": 0.11676997834584697,
+      "mean_row_wer": 0.42511034324868396,
+      "rows": 48
+    },
+    {
+      "arm": "T2",
+      "empty_outputs": 0,
+      "evaluator": "farmerline_w2v_bert",
+      "mean_row_cer": 0.1862752736783714,
+      "mean_row_wer": 0.526440805855735,
+      "rows": 48
+    },
+    {
+      "arm": "T3",
+      "empty_outputs": 0,
+      "evaluator": "farmerline_w2v_bert",
+      "mean_row_cer": 0.10483233346310195,
+      "mean_row_wer": 0.3831940319328102,
+      "rows": 48
+    },
+    {
+      "arm": "T4",
+      "empty_outputs": 0,
+      "evaluator": "farmerline_w2v_bert",
+      "mean_row_cer": 0.31750632703450193,
+      "mean_row_wer": 0.7756242250751088,
+      "rows": 48
+    }
+  ],
+  "decision": {
+    "baseline": "T0",
+    "finalists": [
+      "T3",
+      "T1"
+    ],
+    "ranking": [
+      {
+        "adapted_mms": 0.06519366806759452,
+        "arm": "T3",
+        "farmerline_w2v_bert": 0.10483233346310195,
+        "mean_across_evaluators": 0.08501300076534823
+      },
+      {
+        "adapted_mms": 0.0845062655840078,
+        "arm": "T1",
+        "farmerline_w2v_bert": 0.11676997834584697,
+        "mean_across_evaluators": 0.10063812196492739
+      },
+      {
+        "adapted_mms": 0.15262966597479796,
+        "arm": "T2",
+        "farmerline_w2v_bert": 0.1862752736783714,
+        "mean_across_evaluators": 0.16945246982658468
+      },
+      {
+        "adapted_mms": 0.31651947497341,
+        "arm": "T4",
+        "farmerline_w2v_bert": 0.31750632703450193,
+        "mean_across_evaluators": 0.31701290100395596
+      },
+      {
+        "adapted_mms": 0.3394907535520962,
+        "arm": "T0",
+        "farmerline_w2v_bert": 0.3683389413257366,
+        "mean_across_evaluators": 0.3539148474389164
+      }
+    ],
+    "selection_rule": "Two lowest challenger mean row CERs across the two prespecified ASR evaluators; human Stage B remains required."
+  },
+  "paired_contrasts_sha256": "E3CCEBD54F78AA1B21C4761025FE1580107BF316211DE59B857DA1378A093141",
+  "production_changed": false,
+  "run_id": "20260811T014117Z_tts_closure_dev_v1",
+  "sealed_test_opened": false,
+  "test_rows_read": 0
+}

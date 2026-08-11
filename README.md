@@ -1,10 +1,11 @@
 # Akan Maternal-Health Voice Pipeline: Reproducibility Repository
 
-This repository documents three linked components of an Akan (Twi) maternal-health voice pipeline:
+This repository documents four linked components of an Akan (Twi) maternal-health voice pipeline:
 
 1. **ASR:** parameter-efficient adaptation of `facebook/mms-1b-all` to the maternal-health speech domain;
 2. **forward MT / RNMT:** LoRA adaptation of `facebook/nllb-200-distilled-600M` for Twi-to-English translation, including evaluation under raw and adapted-ASR input;
 3. **reverse MT:** a zero-shot benchmark of unmodified `facebook/nllb-200-3.3B` for English-to-Twi response translation.
+4. **TTS:** a frozen public-checkpoint comparison and blinded native-speaker development screen for spoken Twi output.
 
 It provides the frozen protocols, executable research code, model and data revision identifiers, aggregate results, statistical analyses, figures, and SHA-256 manifests required to inspect and reproduce the reported experiments. Source audio, row-level transcripts, completed human-audit workbooks, credentials, and application-specific configuration are not redistributed; the published dataset remains available from its cited repository.
 
@@ -15,6 +16,7 @@ It provides the frozen protocols, executable research code, model and data revis
 | Maternal-health ASR | `facebook/mms-1b-all@3d33597edbdaaba14a8e858e2c8caa76e3cec0cd` | Adapter training | Hugging Face weights + this repository |
 | Forward RNMT | `facebook/nllb-200-distilled-600M@f8d333a098d19b4fd9a8b18f94170487ad3f821d` | LoRA training | Separate Hugging Face adapter + this repository |
 | Reverse MT | `facebook/nllb-200-3.3B@a2814a8c92847d0d6aaf7afc9eac24ab57f26151` | **None**; zero-shot benchmark only | This repository; no derived model repository |
+| Twi TTS | `multilingual-tts/EveryVoice-OpenBible-Twi-Asante@756fa212153a578000ba4ef45946bb6a0b111f23` | Public-checkpoint evaluation; **no training** | This repository + upstream model card |
 
 NLLB-3.3B was evaluated without parameter updates. Accordingly, this repository records the pinned upstream revision, decoding configuration, and benchmark results; no separate derived-model repository is provided.
 
@@ -59,11 +61,21 @@ In a 72-case, challenge-enriched, paired development audit, the NLLB-3.3B arm ac
 
 These findings are limited to the development and challenge-set evaluations described in the frozen protocols. They do not constitute sealed-test evidence or an assessment of clinical effectiveness or deployment safety.
 
+### Twi text-to-speech selection
+
+In the frozen 32-case/96-clip blinded Stage-B screen, the selected EveryVoice
+Twi-Asante checkpoint produced 29/32 useful-and-safe renderings (90.6%, Wilson
+95% CI 75.8–96.8%) versus 0/32 for the HCI operational baseline. The paired
+result was 29 gains, no losses and three ties (Holm-adjusted exact sign-test
+p = 7.45e-9). This is a single-expert development screen, not MOS, clinical
+validation or population preference. The upstream checkpoint is Bible-domain.
+
 ## Repository map
 
 - `mms_asr/` — frozen protocols, training/analysis scripts, aggregate development evidence, and the Hugging Face card source.
 - `rnmt_forward/` — frozen RNMT notebook/protocols, LoRA configuration, evaluation code, and causal-propagation results.
 - `reverse_mt/` — NLLB-3.3B zero-shot benchmark and paired end-to-end audit.
+- `tts/` — frozen TTS protocol, aggregate selection evidence, references and figures.
 - `docs/` — scope, ethics, and reproducibility notes.
 - `provenance/` — immutable file checksums and source identifiers.
 

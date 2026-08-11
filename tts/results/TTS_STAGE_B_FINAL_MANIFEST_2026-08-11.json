@@ -1,0 +1,73 @@
+{
+  "protocol_id": "tts-closure-dev-v1",
+  "run_id": "20260811T014117Z_tts_closure_dev_v1",
+  "finalized_utc": "2026-08-11T05:18:36.832766+00:00",
+  "source_spreadsheet_id": "1g6-jlZzGMpUtQ3X6pBJve70kNsH4GfPhvofsC0KVMew",
+  "source_mapping_drive_id": "167iLwDnor9LwAdx4zzNJoBQQ3zKweWqV",
+  "expected_and_verified_mapping_sha256": "450F8F6B59A5158DCB135913ABAC02E5363D4DFD2D5938A5A5522B19C654EF99",
+  "selected_deployment_candidate": {
+    "arm": "T3",
+    "model": "multilingual-tts/EveryVoice-OpenBible-Twi-Asante",
+    "revision": "756fa212153a578000ba4ef45946bb6a0b111f23"
+  },
+  "sealed_test_opened": false,
+  "test_rows_read": 0,
+  "production_changed": false,
+  "files": [
+    {
+      "name": "TTS_CLOSURE_PROTOCOL_FROZEN_2026-08-10.md",
+      "size_bytes": 5244,
+      "sha256": "E783DD4052F37EABEAF58BA28E90EC6D76C28C2A48B4F3066F5F0FCD5AA3B4E0"
+    },
+    {
+      "name": "TTS_STAGE_A_ANALYSIS_AND_FINALIST_DECISION_FROM_DRIVE_2026-08-11.json",
+      "size_bytes": 5341,
+      "sha256": "F49AB1EAAB64A0DB39103896B10D72FC5DE5C7686D96FF58C1445CA5B5E4405A"
+    },
+    {
+      "name": "TTS_STAGE_B_AUDIT_RAW_2026-08-11.json",
+      "size_bytes": 23301,
+      "sha256": "21141B3E734E52C0BA1F5B8028EB7CF91203D7C96AF31B47DB73B24501322A0B"
+    },
+    {
+      "name": "TTS_STAGE_B_PRIVATE_MAPPING_UNBLINDED_2026-08-11.csv",
+      "size_bytes": 13814,
+      "sha256": "450F8F6B59A5158DCB135913ABAC02E5363D4DFD2D5938A5A5522B19C654EF99"
+    },
+    {
+      "name": "TTS_STAGE_B_CORRECTION_LEDGER_2026-08-11.json",
+      "size_bytes": 691,
+      "sha256": "83419A263914C728CAE4FB2A48D9F6957C48B7FF135CA0651FA12DB95832EDDF"
+    },
+    {
+      "name": "TTS_STAGE_B_ANALYSIS_FINAL_2026-08-11.json",
+      "size_bytes": 10891,
+      "sha256": "6ACF37A3B090317D3E392C08A3282FC0EB2CA89F4B75E47030E6967687C9371B"
+    },
+    {
+      "name": "TTS_STAGE_B_CLIP_LEVEL_UNBLINDED_2026-08-11.csv",
+      "size_bytes": 14447,
+      "sha256": "AC0E585E07EB9A6E5D70FA6394A7A16BB693305AB21A012D7130197099C6759F"
+    },
+    {
+      "name": "TTS_STAGE_B_SUBGROUP_RESULTS_2026-08-11.csv",
+      "size_bytes": 922,
+      "sha256": "3952F9997C8174850B6F2FBFE07AE37795EA5AF6E6566F506AF02069E8DBAF7B"
+    },
+    {
+      "name": "TTS_STAGE_B_FINAL_RESULTS_REPORT_2026-08-11.md",
+      "size_bytes": 5246,
+      "sha256": "031C1108B7C18F74B7509C1D124507F1B5923BB0BED9CF3EB53A102CEDA450D6"
+    },
+    {
+      "name": "TTS_STAGE_B_USEFUL_SAFE_2026-08-11.svg",
+      "size_bytes": 3267,
+      "sha256": "C1D2135ECA8FE4EC4FFB65F9279DE110A535B28C22BF2E44AD9016F6BC7BA9C9"
+    },
+    {
+      "name": "TTS_STAGE_B_OUTCOME_PROFILE_2026-08-11.svg",
+      "size_bytes": 3537,
+      "sha256": "B9038BB6B1888996D06A57237D5C0BFC7A2F61F44645A9555F263E3435A9086E"
+    }
+  ]
+}
