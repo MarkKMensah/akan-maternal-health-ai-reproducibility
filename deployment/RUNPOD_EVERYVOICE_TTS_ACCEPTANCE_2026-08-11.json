@@ -1,0 +1,54 @@
+{
+  "record_type": "EveryVoice Twi-Asante live technical acceptance",
+  "recorded_at_utc": "2026-08-11T07:05:14.6768023Z",
+  "claim_boundary": "Public research-demonstrator technical acceptance; not clinical validation, MOS, population preference or clinical production authorization.",
+  "selection": {
+    "model": "multilingual-tts/EveryVoice-OpenBible-Twi-Asante",
+    "revision": "756fa212153a578000ba4ef45946bb6a0b111f23",
+    "useful_safe": "29/32",
+    "hci_baseline": "0/32",
+    "mms_tts_aka": "13/32",
+    "paired_gains_losses_ties_vs_hci": [29, 0, 3],
+    "holm_adjusted_p": 7.45e-9,
+    "protected_cases": "13/14",
+    "sealed_test_opened": false
+  },
+  "backend": {
+    "commit": "cfe3bf6d1859c3bcb59bd2a431961f4289e831a1",
+    "build_run": "https://github.com/Akan-ASR-for-Health/asr-app-backend/actions/runs/31464496442",
+    "image": "ghcr.io/akan-asr-for-health/asr-app-backend:sha-cfe3bf6d1859c3bcb59bd2a431961f4289e831a1",
+    "manifest_digest": "sha256:5d7c69a9cefe57972f16da9f284c02af18da06a394561fc77f65f35819ce5598",
+    "config_digest": "sha256:8d9997ce9c17ed92d4a2f0b0bf7bbd54cde71eded5431da273fc1ed80ba09224"
+  },
+  "runpod": {
+    "pod_id": "5sewxdw6wiqh7w",
+    "gpu": "NVIDIA RTX 4000 Ada Generation",
+    "base_url": "https://5sewxdw6wiqh7w-9090.proxy.runpod.net",
+    "health": "healthy",
+    "model_loaded": true,
+    "device": "cuda:0",
+    "worker_status": "healthy",
+    "runtime_fallback": false
+  },
+  "direct_tts": {
+    "status": 200,
+    "content_type": "audio/wav",
+    "bytes": 112684,
+    "latency_seconds": 3.397,
+    "sha256": "94352D7A7470DC0F0557FF3E6764D295297CE718F99720CA9BC2D2727C8098C7"
+  },
+  "websocket": {
+    "status": 200,
+    "content_type": "audio/wav",
+    "bytes": 683052,
+    "forward_route": "nllb_b1_top1 for typed Twi; D1 remains adapted-MMS-audio scoped",
+    "reverse_route": "nllb_b3_segmented",
+    "sha256": "A46C3A61F5D009CD58E138A83506AEE8FA2A53FE0C4D2C0B626D48F2032A097B"
+  },
+  "rollback": {
+    "tag": "rollback/pre-everyvoice-tts-2026-08-11",
+    "commit": "6ea52915bc5d5352e7fc14cfa72d6f2620e7b349",
+    "provider_switch": "TTS_BACKEND=hci",
+    "post_acceptance_rollback_executed": false
+  }
+}

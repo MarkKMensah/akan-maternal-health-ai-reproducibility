@@ -1,0 +1,20 @@
+{
+  "pod_id": "5sewxdw6wiqh7w",
+  "gpu": "NVIDIA RTX 4000 Ada Generation",
+  "network_volume_mount": "/workspace",
+  "public_port": 9090,
+  "private_worker_port": 9091,
+  "image": "ghcr.io/akan-asr-for-health/asr-app-backend:sha-cfe3bf6d1859c3bcb59bd2a431961f4289e831a1",
+  "image_manifest_digest": "sha256:5d7c69a9cefe57972f16da9f284c02af18da06a394561fc77f65f35819ce5598",
+  "non_secret_environment": {
+    "TTS_BACKEND": "everyvoice",
+    "TTS_PRELOAD": "true",
+    "TTS_WORKER_URL": "http://127.0.0.1:9091",
+    "EVERYVOICE_RUNTIME_ROOT": "/workspace/.venvs",
+    "EVERYVOICE_MODEL_ID": "multilingual-tts/EveryVoice-OpenBible-Twi-Asante",
+    "EVERYVOICE_MODEL_REVISION": "756fa212153a578000ba4ef45946bb6a0b111f23",
+    "HF_HOME": "/workspace/.cache/huggingface"
+  },
+  "secret_names_only": ["HUGGING_FACE_HUB_TOKEN", "OPENAI_API_KEY"],
+  "secret_values_recorded": false
+}
