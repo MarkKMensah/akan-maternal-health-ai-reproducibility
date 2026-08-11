@@ -2,6 +2,7 @@
   "release": "reproducibility_record_v2_everyvoice_tts",
   "release_date": "2026-08-11",
   "github_target": "MarkKMensah/akan-maternal-health-ai-reproducibility",
+  "repository_release_tag": "evidence-freeze-2026-08-11-everyvoice",
   "hugging_face": {
     "mms_asr": {
       "repository": "hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1",
@@ -29,6 +30,17 @@
       "reason": "public checkpoint benchmark and selection only; no parameter update",
       "toolkit": "EveryVoice 0.4.1"
     }
+  },
+  "deployment": {
+    "backend_commit": "cfe3bf6d1859c3bcb59bd2a431961f4289e831a1",
+    "backend_build_run": "https://github.com/Akan-ASR-for-Health/asr-app-backend/actions/runs/31464496442",
+    "image": "ghcr.io/akan-asr-for-health/asr-app-backend:sha-cfe3bf6d1859c3bcb59bd2a431961f4289e831a1",
+    "image_manifest_digest": "sha256:5d7c69a9cefe57972f16da9f284c02af18da06a394561fc77f65f35819ce5598",
+    "image_config_digest": "sha256:8d9997ce9c17ed92d4a2f0b0bf7bbd54cde71eded5431da273fc1ed80ba09224",
+    "runpod_pod_id": "5sewxdw6wiqh7w",
+    "accepted_tts_model_revision": "756fa212153a578000ba4ef45946bb6a0b111f23",
+    "frontend_main_commit": "8d153e6970000c6ef30bd08852d3e65f3973c336",
+    "technical_acceptance_date": "2026-08-11"
   },
   "not_redistributed": [
     "raw audio",

@@ -15,7 +15,15 @@ switch, and Git tag `rollback/pre-everyvoice-tts-2026-08-11` preserves the
 pre-integration source at commit
 `6ea52915bc5d5352e7fc14cfa72d6f2620e7b349`.
 
-Operational acceptance requires the immutable candidate image digest, live
-health metadata, one direct `/tts/` WAV response, one complete WebSocket audio
-response, browser playback, latency/GPU observations and a rollback check. A
-development-selection result alone is not production-safety evidence.
+Live technical acceptance completed on 11 August 2026. The accepted backend is
+commit `cfe3bf6d1859c3bcb59bd2a431961f4289e831a1`, image
+`sha-cfe3bf6d1859c3bcb59bd2a431961f4289e831a1`, manifest digest
+`sha256:5d7c69a9cefe57972f16da9f284c02af18da06a394561fc77f65f35819ce5598`.
+Health, direct `/tts/`, the full public WebSocket audio path, API docs, public
+demos and the Vercel frontend all passed. See
+`RUNPOD_EVERYVOICE_TTS_ACCEPTANCE_2026-08-11.md` and its machine-readable JSON.
+
+The rollback anchors were verified but not exercised after acceptance, because
+doing so would interrupt the accepted public deployment. A development
+selection and technical smoke test remain distinct from clinical or production
+safety evidence.

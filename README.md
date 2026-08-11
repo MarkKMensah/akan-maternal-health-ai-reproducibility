@@ -76,6 +76,7 @@ validation or population preference. The upstream checkpoint is Bible-domain.
 - `rnmt_forward/` — frozen RNMT notebook/protocols, LoRA configuration, evaluation code, and causal-propagation results.
 - `reverse_mt/` — NLLB-3.3B zero-shot benchmark and paired end-to-end audit.
 - `tts/` — frozen TTS protocol, aggregate selection evidence, references and figures.
+- `deployment/` — immutable EveryVoice integration identity, redacted non-secret RunPod configuration and live acceptance evidence.
 - `docs/` — scope, ethics, and reproducibility notes.
 - `provenance/` — immutable file checksums and source identifiers.
 
@@ -88,6 +89,15 @@ validation or population preference. The upstream checkpoint is Bible-domain.
 5. Reproduce the adapted-ASR causal-propagation evaluation.
 6. Run the reverse-MT zero-shot benchmark at the pinned NLLB-3.3B revision.
 7. Verify repository files against `provenance/SHA256SUMS.txt`.
+
+## Public research demonstrator
+
+The selected EveryVoice checkpoint is technically accepted at
+https://5sewxdw6wiqh7w-9090.proxy.runpod.net and is consumed by the public
+frontend at https://asr-web-frontend-blue.vercel.app/. The exact backend
+commit, image digests, generated-audio hashes and rollback boundary are recorded
+in `deployment/RUNPOD_EVERYVOICE_TTS_ACCEPTANCE_2026-08-11.md`. This is a public
+research demonstrator, not a clinically authorized service.
 
 Exact software versions are recorded in the notebooks and environment manifests. Data files are intentionally not committed.
 
