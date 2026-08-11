@@ -1,0 +1,324 @@
+{
+  "protocol_id": "tts-closure-dev-v1",
+  "analysis_completed_utc": "2026-08-11T05:16:08.536736+00:00",
+  "run_id": "20260811T014117Z_tts_closure_dev_v1",
+  "mapping_sha256_verified": "450F8F6B59A5158DCB135913ABAC02E5363D4DFD2D5938A5A5522B19C654EF99",
+  "raw_audit_snapshot_sha256": "21141B3E734E52C0BA1F5B8028EB7CF91203D7C96AF31B47DB73B24501322A0B",
+  "source_sheet_url": "https://docs.google.com/spreadsheets/d/1g6-jlZzGMpUtQ3X6pBJve70kNsH4GfPhvofsC0KVMew/edit#gid=876126003",
+  "sealed_test_opened": false,
+  "test_rows_read": 0,
+  "production_changed": false,
+  "analysis_definition": {
+    "useful_safe_rendering": "intelligibility FULLY or MOSTLY; protected/critical concept YES; no truncation or repetition; no MEANING_CHANGING tonal/segmental ambiguity",
+    "naturalness": "descriptive 1-5 ordinal only; not MOS",
+    "human_evidence": "blinded single-expert native-language development screen"
+  },
+  "pre_unblinding_corrections": [
+    {
+      "correction_id": "TTSB-CORR-001",
+      "case_id": "TTSB-021",
+      "blind_label": "C",
+      "field": "critical_concept_preserved_c",
+      "raw_value": "YES",
+      "analysis_value": "NO",
+      "reason": "The adjudication note explicitly states that A, B and C all missed the protected code-mixed term HIV. The deterministic consistency recode was declared before the private model mapping was accessed; the source sheet remains unchanged."
+    }
+  ],
+  "system_summary": [
+    {
+      "arm": "T0",
+      "name": "HCI-LEGACY",
+      "model": "hci-lab-dcug/ugtts-multispeaker-max42secs-total7hrs-sr22050",
+      "role": "operational baseline",
+      "n": 32,
+      "useful_safe_n": 0,
+      "useful_safe_rate": 0.0,
+      "useful_safe_wilson_95": [
+        0.0,
+        0.1071791982550706
+      ],
+      "critical_preserved_n": 3,
+      "critical_preserved_rate": 0.09375,
+      "critical_failure_n": 29,
+      "fully_or_mostly_intelligible_n": 0,
+      "fully_or_mostly_intelligible_rate": 0.0,
+      "no_truncation_or_repetition_n": 19,
+      "no_truncation_or_repetition_rate": 0.59375,
+      "no_meaning_changing_ambiguity_n": 9,
+      "no_meaning_changing_ambiguity_rate": 0.28125,
+      "naturalness_mean": 1.375,
+      "naturalness_median": 1.0,
+      "intelligibility_distribution": {
+        "UNINTELLIGIBLE": 26,
+        "PARTIALLY_INTELLIGIBLE": 6
+      }
+    },
+    {
+      "arm": "T1",
+      "name": "MMS-TTS-AKAN",
+      "model": "facebook/mms-tts-aka@c20caea1cb234579cb5e3338b117a67d8235db1c",
+      "role": "official public Akan anchor",
+      "n": 32,
+      "useful_safe_n": 13,
+      "useful_safe_rate": 0.40625,
+      "useful_safe_wilson_95": [
+        0.2551963484266544,
+        0.5773997512461713
+      ],
+      "critical_preserved_n": 17,
+      "critical_preserved_rate": 0.53125,
+      "critical_failure_n": 15,
+      "fully_or_mostly_intelligible_n": 15,
+      "fully_or_mostly_intelligible_rate": 0.46875,
+      "no_truncation_or_repetition_n": 28,
+      "no_truncation_or_repetition_rate": 0.875,
+      "no_meaning_changing_ambiguity_n": 27,
+      "no_meaning_changing_ambiguity_rate": 0.84375,
+      "naturalness_mean": 3.28125,
+      "naturalness_median": 3.0,
+      "intelligibility_distribution": {
+        "PARTIALLY_INTELLIGIBLE": 11,
+        "MOSTLY_INTELLIGIBLE": 8,
+        "FULLY_INTELLIGIBLE": 7,
+        "UNINTELLIGIBLE": 6
+      }
+    },
+    {
+      "arm": "T3",
+      "name": "EVERYVOICE-TWI-ASANTE",
+      "model": "multilingual-tts/EveryVoice-OpenBible-Twi-Asante@756fa212153a578000ba4ef45946bb6a0b111f23",
+      "role": "public Twi-Asante challenger",
+      "n": 32,
+      "useful_safe_n": 29,
+      "useful_safe_rate": 0.90625,
+      "useful_safe_wilson_95": [
+        0.7578184527161212,
+        0.9675984487016337
+      ],
+      "critical_preserved_n": 29,
+      "critical_preserved_rate": 0.90625,
+      "critical_failure_n": 3,
+      "fully_or_mostly_intelligible_n": 31,
+      "fully_or_mostly_intelligible_rate": 0.96875,
+      "no_truncation_or_repetition_n": 31,
+      "no_truncation_or_repetition_rate": 0.96875,
+      "no_meaning_changing_ambiguity_n": 30,
+      "no_meaning_changing_ambiguity_rate": 0.9375,
+      "naturalness_mean": 4.59375,
+      "naturalness_median": 5.0,
+      "intelligibility_distribution": {
+        "MOSTLY_INTELLIGIBLE": 13,
+        "FULLY_INTELLIGIBLE": 18,
+        "PARTIALLY_INTELLIGIBLE": 1
+      }
+    }
+  ],
+  "paired_primary_contrasts": {
+    "T1": {
+      "challenger_name": "MMS-TTS-AKAN",
+      "n_cases": 32,
+      "useful_safe_gains_vs_T0": 13,
+      "useful_safe_losses_vs_T0": 0,
+      "useful_safe_ties": 19,
+      "rate_difference_vs_T0": 0.40625,
+      "paired_bootstrap_95": [
+        0.25,
+        0.59375
+      ],
+      "exact_two_sided_sign_p_raw": 0.000244140625,
+      "best_overall_choice_summary": {
+        "challenger_selected": 6,
+        "baseline_selected": 0,
+        "explicit_tie": 0,
+        "other_or_neither": 26
+      },
+      "holm_adjusted_p": 0.000244140625
+    },
+    "T3": {
+      "challenger_name": "EVERYVOICE-TWI-ASANTE",
+      "n_cases": 32,
+      "useful_safe_gains_vs_T0": 29,
+      "useful_safe_losses_vs_T0": 0,
+      "useful_safe_ties": 3,
+      "rate_difference_vs_T0": 0.90625,
+      "paired_bootstrap_95": [
+        0.78125,
+        1.0
+      ],
+      "exact_two_sided_sign_p_raw": 3.725290298461914e-09,
+      "best_overall_choice_summary": {
+        "challenger_selected": 28,
+        "baseline_selected": 0,
+        "explicit_tie": 0,
+        "other_or_neither": 4
+      },
+      "holm_adjusted_p": 7.450580596923828e-09
+    }
+  },
+  "stage_a_automatic_summary": {
+    "arm_summary": [
+      {
+        "arm": "T0",
+        "mean_clipping_fraction": 0.0,
+        "mean_silence_fraction": 0.10075825304885815,
+        "median_duration_seconds": 6.49687074829932,
+        "median_latency_seconds": 1.353479137000022,
+        "median_real_time_factor": 0.20429587787936784,
+        "rows": 48,
+        "success_rate": 1.0
+      },
+      {
+        "arm": "T1",
+        "mean_clipping_fraction": 0.0,
+        "mean_silence_fraction": 0.1593708055391249,
+        "median_duration_seconds": 7.952,
+        "median_latency_seconds": 0.10382767250007416,
+        "median_real_time_factor": 0.012785217238595,
+        "rows": 48,
+        "success_rate": 1.0
+      },
+      {
+        "arm": "T2",
+        "mean_clipping_fraction": 0.0,
+        "mean_silence_fraction": 0.231521000988831,
+        "median_duration_seconds": 6.68,
+        "median_latency_seconds": 0.0966274740000017,
+        "median_real_time_factor": 0.013165160054138,
+        "rows": 48,
+        "success_rate": 1.0
+      },
+      {
+        "arm": "T3",
+        "mean_clipping_fraction": 0.0,
+        "mean_silence_fraction": 0.27864032532151173,
+        "median_duration_seconds": 7.360725623582766,
+        "median_latency_seconds": 1.2763831754998591,
+        "median_real_time_factor": 0.17330477499700064,
+        "rows": 48,
+        "success_rate": 1.0
+      },
+      {
+        "arm": "T4",
+        "mean_clipping_fraction": 8.402522923347026e-06,
+        "mean_silence_fraction": 0.12497946193994726,
+        "median_duration_seconds": 6.339047619047619,
+        "median_latency_seconds": 0.2970466049998777,
+        "median_real_time_factor": 0.05097135306223665,
+        "rows": 48,
+        "success_rate": 1.0
+      }
+    ],
+    "corpus_proxy_summary": [
+      {
+        "arm": "T0",
+        "empty_outputs": 0,
+        "evaluator": "adapted_mms",
+        "mean_row_cer": 0.3394907535520962,
+        "mean_row_wer": 0.7912990916917056,
+        "rows": 48
+      },
+      {
+        "arm": "T1",
+        "empty_outputs": 0,
+        "evaluator": "adapted_mms",
+        "mean_row_cer": 0.0845062655840078,
+        "mean_row_wer": 0.30632005129697165,
+        "rows": 48
+      },
+      {
+        "arm": "T2",
+        "empty_outputs": 0,
+        "evaluator": "adapted_mms",
+        "mean_row_cer": 0.15262966597479796,
+        "mean_row_wer": 0.4752129039317808,
+        "rows": 48
+      },
+      {
+        "arm": "T3",
+        "empty_outputs": 0,
+        "evaluator": "adapted_mms",
+        "mean_row_cer": 0.06519366806759452,
+        "mean_row_wer": 0.3031022894690372,
+        "rows": 48
+      },
+      {
+        "arm": "T4",
+        "empty_outputs": 0,
+        "evaluator": "adapted_mms",
+        "mean_row_cer": 0.31651947497341,
+        "mean_row_wer": 0.7984043964838307,
+        "rows": 48
+      },
+      {
+        "arm": "T0",
+        "empty_outputs": 0,
+        "evaluator": "farmerline_w2v_bert",
+        "mean_row_cer": 0.3683389413257366,
+        "mean_row_wer": 0.8279315535392078,
+        "rows": 48
+      },
+      {
+        "arm": "T1",
+        "empty_outputs": 0,
+        "evaluator": "farmerline_w2v_bert",
+        "mean_row_cer": 0.11676997834584697,
+        "mean_row_wer": 0.42511034324868396,
+        "rows": 48
+      },
+      {
+        "arm": "T2",
+        "empty_outputs": 0,
+        "evaluator": "farmerline_w2v_bert",
+        "mean_row_cer": 0.1862752736783714,
+        "mean_row_wer": 0.526440805855735,
+        "rows": 48
+      },
+      {
+        "arm": "T3",
+        "empty_outputs": 0,
+        "evaluator": "farmerline_w2v_bert",
+        "mean_row_cer": 0.10483233346310195,
+        "mean_row_wer": 0.3831940319328102,
+        "rows": 48
+      },
+      {
+        "arm": "T4",
+        "empty_outputs": 0,
+        "evaluator": "farmerline_w2v_bert",
+        "mean_row_cer": 0.31750632703450193,
+        "mean_row_wer": 0.7756242250751088,
+        "rows": 48
+      }
+    ],
+    "finalists": [
+      "T3",
+      "T1"
+    ]
+  },
+  "promotion_gates": {
+    "T1": {
+      "success_ge_99pct": true,
+      "no_increase_in_stage_b_critical_failure": true,
+      "noninferior_on_both_asr_cer_proxies": true,
+      "acceptable_runtime_rtf_below_1": true,
+      "human_useful_safe_improvement": true,
+      "all_promotion_gates_pass": true
+    },
+    "T3": {
+      "success_ge_99pct": true,
+      "no_increase_in_stage_b_critical_failure": true,
+      "noninferior_on_both_asr_cer_proxies": true,
+      "acceptable_runtime_rtf_below_1": true,
+      "human_useful_safe_improvement": true,
+      "all_promotion_gates_pass": true
+    }
+  },
+  "decision": {
+    "selected_arm": "T3",
+    "selected_name": "EVERYVOICE-TWI-ASANTE",
+    "decision": "PROMOTE_AS_TTS_DEPLOYMENT_CANDIDATE",
+    "production_changed": false,
+    "next_action": "Freeze artifacts, then perform reversible integration and operational smoke test."
+  },
+  "claim_boundary": "Development component selection only. Not MOS, inter-rater reliability, clinical validation, population preference, or a state-of-the-art claim."
+}

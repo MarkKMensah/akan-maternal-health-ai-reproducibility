@@ -1,19 +1,19 @@
 {
-  "release": "reproducibility_record_v1",
-  "release_date": "2026-08-10",
+  "release": "reproducibility_record_v2_everyvoice_tts",
+  "release_date": "2026-08-11",
   "github_target": "MarkKMensah/akan-maternal-health-ai-reproducibility",
   "hugging_face": {
     "mms_asr": {
       "repository": "hci-lab-dcug/akan-maternal-health-mms-1b-adapter-dev-v1",
       "record": "model card, metadata, and existing adapter weights",
-      "commit": "acdb5ba",
+      "commit": "acdb5ba76f0f4796906e6bda069dbe9110dc39e6",
       "weights_already_present": true,
       "adapter_sha256": "F9B87F0ACD73BB8703ED936EB79117699FA9988B05B13ADB9D5288E0994B496B"
     },
     "forward_rnmt": {
       "repository": "GiftMark/akan-maternal-health-nllb-600m-rnmt-lora-v1",
       "record": "model card, metadata, and LoRA adapter weights",
-      "commit": "507040f",
+      "commit": "507040f36b4683b2e0ecf2008273c4afc1dba092",
       "adapter_sha256": "209B17B08168DB35E02BD9CF2A5BE321A0175069DE51C0D8050AA565353C88E1"
     },
     "reverse_mt": {
@@ -21,6 +21,13 @@
       "upstream_revision": "a2814a8c92847d0d6aaf7afc9eac24ab57f26151",
       "derived_repository_created": false,
       "reason": "zero-shot benchmark only; no parameter update"
+    },
+    "tts": {
+      "upstream_repository": "multilingual-tts/EveryVoice-OpenBible-Twi-Asante",
+      "upstream_revision": "756fa212153a578000ba4ef45946bb6a0b111f23",
+      "derived_repository_created": false,
+      "reason": "public checkpoint benchmark and selection only; no parameter update",
+      "toolkit": "EveryVoice 0.4.1"
     }
   },
   "not_redistributed": [
